@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fortune's Ink</title>
+  <!-- Link external CSS file -->
+  <link rel="stylesheet" href="styaling.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER SECTION ===== -->
+  
+    
+<header>
+  <h1>
+    <img src="images/icon.jpg.jpg" alt="Fortune's Ink Logo" class="logo-icon" />
+    Fortune's Ink
+  </h1>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#artists">Artists</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#videos">Videos</a>
+    <a href="#book">Book Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+  
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <h2>"BRINGING IMAGINATION TO LIFE"</h2>
+    <button onclick="scrollToSection('book')">Book a Session</button>
+  </section>
+
+  <!-- ===== ARTISTS SECTION ===== -->
+  <section id="artists" class="artists">
+    <h2>Meet Our Artist</h2>
+    <div class="artist-grid">
+      <!-- Example artist cards -->
+      <div class="artist">
+        <img src="images/artist1.jpg.jpg" alt="Main Artist" />
+        <h3>Fortune </h3>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="image-grid">
+      <!-- Example tattoo images -->
+      <img src="images/tattoo1.jpg.jpg" alt="Tattoo 1" />
+      <img src="images/tattoo2.jpg.jpg" alt="Tattoo 2" />
+      <img src="images/tattoo3.jpg.jpg" alt="Tattoo 3" />
+    </div>
+  </section>
+
+  <!-- ===== VIDEO SECTION ===== -->
+<section id="videos" class="videos">
+  <h2>Watch Our Work</h2>
+  <div class="video-grid">
+    <!-- Example videos -->
+    <video controls>
+      <source src="videos/videos1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls>
+      <source src="videos/videos2.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls>
+      <source src="videos/videos3.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+<!-- ===== ABOUT US SECTION ===== -->
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>
+    Fortune's Ink is a premier tattoo studio located in Kamhlushwa. We bring your imagination to life with creative, custom tattoo designs. Our artist, Fortune, has years of experience delivering high-quality and safe tattoo art. 
+  </p>
+  <p>
+    Follow us on social media for updates, behind-the-scenes content, and client stories:
+  </p>
+  <div class="socials">
+    <a href="https://www.instagram.com/fortunesink" target="_blank">Instagram</a> |
+    <a href="https://www.facebook.com/datcoolkid.clldboetmagiya" target="_blank">Facebook</a> |
+    <a href="https://www.tiktok.com/@fortunesink" target="_blank">TikTok</a>
+  </div>
+</section>
+
+
+  <!-- ===== BOOKING FORM SECTION ===== -->
+  <!-- ===== BOOKING FORM SECTION ===== -->
+<section id="book" class="book">
+  <h2>Book a Session</h2>
+  <form onsubmit="sendWhatsApp(event)">
+    <input type="text" id="name" placeholder="Full Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <textarea id="description" placeholder="Tattoo Description" required></textarea>
+    <button type="submit">Submit via WhatsApp</button>
+  </form>
+</section>
+
+
+  <!-- ===== FOOTER SECTION ===== -->
+  <footer id="contact">
+    <p>📍 Kamhlushwa near sasol garage opposite to nkomazi Pizza | ☎️ 0649635223 | © 2025 Fortune's Ink</p>
+  </footer>
+
+  <!-- Link external JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>
